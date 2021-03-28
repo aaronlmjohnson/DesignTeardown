@@ -48,5 +48,218 @@ table {
 }
 *{
 	box-sizing: border-box;
+	background-color: rgb(235, 235, 235);
 }
+p {
+	background-color: inherit;
+	color: white;
+	font-family: 'Merriweather';
+}
+
+
+
+nav {
+	height: 10vh;
+	background-color: rgb(43, 41, 41);
+	
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 6fr 4fr 1fr;
+	grid-column: 2;
+	margin: 40px 0 0 0;
+	grid-gap: 20px;
+}
+
+.content-main {
+	height: 40vh;
+	
+	background-color: rgb(75, 74, 74);
+}
+
+.content-right {
+	height: 60vh;
+	width: 100%;
+	background-color: rgb(75, 74, 74);
+	grid-column: 3;
+	justify-self: end;
+	font-weight: 700;
+}
+
+.content-left {
+	grid-column: 2;
+}
+
+.content-1, .content-2 {
+	height: 20vh;
+	margin: 20px 0 0 0;
+	background-color: grey;
+
+}
+
+.latest-articles {
+	background-color: rgb(59, 59, 59);
+	height: 5vh;
+	width: 20%;
+	grid-column: 2;
+	margin: 60px auto;
+}
+
+.more-articles {
+	display: grid;
+	grid-template-columns: 1fr repeat(3, 3fr) 1fr;
+	background-color: rgb(235, 235, 235);
+
+}
+
+.more-article {
+	height: 60vh;
+	border: 1px solid black;
+	background-color:rgb(175, 175, 175);
+}
+
+.extras {
+	background-color: rgb(235, 235, 235);
+	display: grid;
+	grid-template-columns: 1fr 3fr 6fr 1fr;
+	margin: 100px 0;
+	height: 50vh;
+}
+
+.ad {
+	grid-column: 2;
+	background-color: rgb(58, 58, 58);
+	width: 70%;
+	height: 50%;
+	place-self: center;
+}
+
+.join-community {
+	grid-column: 3;
+	background-color: green;
+	background-color: rgb(165, 164, 164);
+}
+
+.img {
+	position: relative;
+	height: 15vh;
+	width: 16%;
+	background-color: rgb(58, 58, 58);
+	left: 40%;
+	bottom: 10%;
+	border-radius: 50%;
+}
+
+.book {
+	background-color: rgb(27, 27, 27);
+	height: 100vh;
+	font-weight: 900;
+}
+
+.guides {
+	display: grid;
+	margin-top: 40px;
+	height: 120vh;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: 1fr 3fr;
+	grid-gap: 20px;
+
+}
+.guide:nth-child(n+1){
+	border: 1px solid black;
+}
+.guide:first-child {
+	grid-column: 2;
+	background-color: rgb(150, 148, 148);
+	
+
+}
+
+.guide:nth-child(2) {
+	grid-column: 3;
+	background-color: rgb(150, 148, 148);
+}
+
+.guide:nth-child(3) {
+	grid-column: 2;
+	grid-row: 2;
+	background-color: rgb(104, 101, 101);
+}
+
+.newsletter {
+	grid-column: 3;
+	grid-row: 2; 
+	border: 1px solid black;
+	background-color: rgb(104, 101, 101);
+}
+
+.design-systems {
+	background-color: rgb(27, 27, 27);
+	height: 40vh;
+	
+}
+
+.book-img {
+	width: 15%;
+	height: 40vh;
+	background-color: rgb(10, 10, 10);
+	position: relative;
+	bottom: 15%;
+	left: 75%;
+	transform: rotate(-10deg);
+}
+.person-content {
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: 1fr 4fr;
+	height: 120vh;
+}
+.person-of-the-week {
+	background-color: rgb(180, 178, 178);
+	grid-column: 2/4;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	
+}
+
+.person-img {
+	width: 15vh;
+	height: 15vh;
+	background-color: rgb(87, 87, 87);
+	transform: rotate(-10deg);
+	place-self: center;
+}
+
+.person-articles {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-column: 2 / 4;
+	grid-row: 2;
+	
+}
+.person-article {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	border: 1px solid black;
+	background-color: rgb(116, 116, 116);
+}
+
+.img2 {
+	background-color: rgb(68, 68, 68);
+	width: 10vh;
+	height: 10vh;
+	transform: rotate(-10deg);
+	justify-self: center;
+	margin-top: 20px;
+}
+
+footer {
+	background-color: rgb(63, 63, 63);
+	height: 85vh;
+}
+
+
+
 
